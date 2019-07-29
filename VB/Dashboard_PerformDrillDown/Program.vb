@@ -1,5 +1,4 @@
-Imports Microsoft.VisualBasic
-Imports System
+﻿Imports System
 Imports System.Collections.Generic
 Imports System.Linq
 Imports System.Windows.Forms
@@ -7,12 +6,14 @@ Imports DevExpress.Skins
 
 Namespace Dashboard_PerformDrillDown
 	Friend NotInheritable Class Program
+
+		Private Sub New()
+		End Sub
+
 		''' <summary>
 		''' The main entry point for the application.
 		''' </summary>
-		Private Sub New()
-		End Sub
-		<STAThread> _
+		<STAThread>
 		Shared Sub Main()
 			SkinManager.EnableFormSkins()
 			Application.EnableVisualStyles()

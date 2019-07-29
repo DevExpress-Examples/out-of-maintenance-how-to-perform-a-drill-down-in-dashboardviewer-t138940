@@ -1,5 +1,4 @@
-Imports Microsoft.VisualBasic
-Imports System
+﻿Imports System
 Imports System.Collections.Generic
 Imports DevExpress.XtraEditors
 Imports System.Collections
@@ -9,9 +8,11 @@ Imports DevExpress.DashboardCommon.ViewerData
 Namespace Dashboard_PerformDrillDown
 	Partial Public Class Form1
 		Inherits XtraForm
+
 		Public Sub New()
 			InitializeComponent()
-
+			AddHandler comboBox1.SelectedIndexChanged, AddressOf comboBox1_SelectedIndexChanged
+			AddHandler btnDrillUp.Click, AddressOf btnDrillUp_Click
 			' Loads a dashboard from an XML file.
 			dashboardViewer1.LoadDashboard("..\..\Data\Dashboard.xml")
 			' Obtains values that can be used to perform drill-down.
@@ -21,8 +22,8 @@ Namespace Dashboard_PerformDrillDown
 			Next rows
 		End Sub
 
-		Private Sub comboBox1_SelectedIndexChanged(ByVal sender As Object, ByVal e As EventArgs) Handles comboBox1.SelectedIndexChanged
-			Dim comboBox1 As System.Windows.Forms.ComboBox = CType(sender, System.Windows.Forms.ComboBox)
+		Private Sub comboBox1_SelectedIndexChanged(ByVal sender As Object, ByVal e As EventArgs)
+			Dim comboBox1 As System.Windows.Forms.ComboBox = DirectCast(sender, System.Windows.Forms.ComboBox)
 			If dashboardViewer1.CanPerformDrillDown("gridDashboardItem1") = True Then
 				' Performs drill-down for a selected category.
 				dashboardViewer1.PerformDrillDown("gridDashboardItem1", comboBox1.SelectedItem)
@@ -34,7 +35,7 @@ Namespace Dashboard_PerformDrillDown
 			End If
 		End Sub
 
-		Private Sub btnDrillUp_Click(ByVal sender As Object, ByVal e As EventArgs) Handles btnDrillUp.Click
+		Private Sub btnDrillUp_Click(ByVal sender As Object, ByVal e As EventArgs)
 			If dashboardViewer1.CanPerformDrillUp("gridDashboardItem1") = True Then
 				' Performs a drill-up in the grid dashboard item.
 				dashboardViewer1.PerformDrillUp("gridDashboardItem1")

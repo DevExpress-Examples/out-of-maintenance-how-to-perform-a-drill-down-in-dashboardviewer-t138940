@@ -3,13 +3,13 @@
 
 * [Form1.cs](./CS/Dashboard_PerformDrillDown/Form1.cs) (VB: [Form1.vb](./VB/Dashboard_PerformDrillDown/Form1.vb))
 <!-- default file list end -->
-# How to perform a drill-down in DashboardViewer
+# How to: Perform a Drill-Down in Code (DashboardViewer)
 
 
-<p>The following example demonstrates how to perform a drill-down in DashboardViewer.</p>
-<p>In this example, the <a href="http://documentation.devexpress.com/#Dashboard/DevExpressDashboardWinDashboardViewer_PerformDrillDowntopic">DashboardViewer.PerformDrillDown</a> method is used to perform a drill-down for a specified row in a <a href="http://documentation.devexpress.com/#Dashboard/CustomDocument15150">Grid</a> dashboard item. This method is called in the <strong>SelectedIndexChanged</strong> event handler of the combo box.<br />The <a href="http://documentation.devexpress.com/#Dashboard/DevExpressDashboardWinDashboardViewer_PerformDrillUptopic">DashboardViewer.PerformDrillUp</a> method called in the <strong>Click</strong> event handler returns the Grid dashboard item to the top detail level.</p>
-<br /><br /><br />
+This example demonstrates how to perform a drill-down in code.
 
-<br/>
+The [DashboardViewer.PerformDrillDow](https://docs.devexpress.com/Dashboard/devexpress.dashboardwin.dashboardviewer.performdrilldown.overloads) method performs a drill-down for the specified row in the [Grid](https://docs.devexpress.com/Dashboard/15150). The combo box's [SelectedIndexChanged](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.combobox.selectedindexchanged) event handler calls the method. 
 
+Click the button to call the [DashboardViewer.PerformDrillUp](https://docs.devexpress.com/Dashboard/DevExpress.DashboardWin.DashboardViewer.PerformDrillUp(System.String))  method to return to the top detail level.
 
+![](/images/screenshot.png)

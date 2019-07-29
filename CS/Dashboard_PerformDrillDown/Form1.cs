@@ -9,7 +9,8 @@ namespace Dashboard_PerformDrillDown {
     public partial class Form1 : XtraForm {
         public Form1() {
             InitializeComponent();
-
+            comboBox1.SelectedIndexChanged += comboBox1_SelectedIndexChanged;
+            btnDrillUp.Click += btnDrillUp_Click;
             // Loads a dashboard from an XML file.
             dashboardViewer1.LoadDashboard(@"..\..\Data\Dashboard.xml");
             // Obtains values that can be used to perform drill-down.

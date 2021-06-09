@@ -17,4 +17,4 @@ Click the button to call the [DashboardViewer.PerformDrillUp](https://docs.devex
 # Documentation 
 
 - [Drill-Down](https://docs.devexpress.com/Dashboard/116913)
--[WinForms Dashboard Viewer](https://docs.devexpress.com/Dashboard/117122)
+- [WinForms Dashboard Viewer](https://docs.devexpress.com/Dashboard/117122)

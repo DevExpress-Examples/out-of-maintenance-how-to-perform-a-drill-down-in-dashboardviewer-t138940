@@ -13,3 +13,7 @@ The [DashboardViewer.PerformDrillDow](https://docs.devexpress.com/Dashboard/dev
 Click the button to call the [DashboardViewer.PerformDrillUp](https://docs.devexpress.com/Dashboard/DevExpress.DashboardWin.DashboardViewer.PerformDrillUp(System.String))  method to return to the top detail level.
 
 ![](/images/screenshot.png)
+
+# Documentation 
+
+- [Drill-Down](https://docs.devexpress.com/Dashboard/116913)

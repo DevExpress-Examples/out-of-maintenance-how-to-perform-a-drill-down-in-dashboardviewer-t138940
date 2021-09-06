@@ -8,7 +8,7 @@
 
 * [Form1.cs](./CS/Dashboard_PerformDrillDown/Form1.cs) (VB: [Form1.vb](./VB/Dashboard_PerformDrillDown/Form1.vb))
 <!-- default file list end -->
-# How to: Perform a Drill-Down in Code (DashboardViewer)
+# Dashboard for WinForms - Perform a Drill-Down in Code
 
 
 This example demonstrates how to perform a drill-down in code.
@@ -21,5 +21,14 @@ Click the button to call the [DashboardViewer.PerformDrillUp](https://docs.devex
 
 # Documentation 
 
-- [Drill-Down](https://docs.devexpress.com/Dashboard/116913)
-- [WinForms Dashboard Viewer](https://docs.devexpress.com/Dashboard/117122)
+* [Drill-Down](https://docs.devexpress.com/Dashboard/116913)
+* [Master Filtering](https://docs.devexpress.com/Dashboard/116912)
+* [Interactivity](https://docs.devexpress.com/Dashboard/116692)
+* [WinForms Dashboard Drill-Down](https://docs.devexpress.com/Dashboard/15703)
+* [WinForms Dashboard Viewer](https://docs.devexpress.com/Dashboard/117122)
+* [Manage Dashboard State](https://docs.devexpress.com/Dashboard/400729)
+
+## More Examples
+
+* [Dashboard for WinForms - How to enable master Drill-Down](https://github.com/DevExpress-Examples/win-dashboard-designer-master-drill-down)
+* [Dashboard for WinForms - Synchronize Master Filter and Drill Down Actions Between Dashboards](https://github.com/DevExpress-Examples/winforms-dashboard-linked-interactivity)
